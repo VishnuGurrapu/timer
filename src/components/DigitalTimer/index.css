@@ -1,0 +1,183 @@
+/* Write your CSS here */
+.clock-container {
+  background-image: linear-gradient(to right, #ffffff, #cffcf1);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.heading {
+  color: #0f172a;
+  font-size: 30px;
+  font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  .heading {
+    color: #0f172a;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+.containersContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* Make sure the container fills the viewport height */
+}
+
+@media screen and (max-width: 767px) {
+  .containersContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.timerContiner {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: contain; /* Ensures the entire image fits within the container */
+  background-position: center; /* Centers the image within the container */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  width: 50vw; /* Width of the container as a percentage of viewport width */
+  height: 50vh; /* Height of the container as a percentage of viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .timerContiner {
+    width: 60vw; /* Adjust width for large screens */
+    height: 60vh; /* Adjust height proportionally */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timerContiner {
+    width: 90vw; /* Adjust width for medium screens */
+    height: 50vh; /* Adjust height proportionally */
+  }
+}
+.controlsContainer {
+  flex: 1;
+  width: 45%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10vw;
+}
+
+@media screen and (max-width: 768px) {
+  .controlsContainer {
+    width: 100%;
+    padding-right: 0vw;
+  }
+}
+.counter {
+  background-color: #ffffff;
+  width: 150px; /* Set the width of the container */
+  height: 150px; /* Set the height equal to the width for a perfect circle */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0px;
+  align-items: center;
+  border-radius: 50%; /* Makes the container round */
+  box-shadow: 0px 4px 16px 0px #bfbfbf; /* Adds a shadow for better appearance */
+}
+@media screen and (max-width: 768px) {
+  .counter {
+    background-color: #ffffff;
+    width: 100px; /* Set the width of the container */
+    height: 100px;
+  }
+}
+.time {
+  font-size: 30px;
+  color: #00d9f5;
+  font-weight: 500;
+  margin: 0px;
+}
+@media screen and (max-width: 768px) {
+  .time {
+    font-size: 20px;
+    color: #00d9f5;
+  }
+}
+.status {
+  font-size: 15px;
+  margin: 0px;
+}
+@media screen and (max-width: 768px) {
+  .status {
+    font-size: 10px;
+  }
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.pauserbtnContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.pauseBtn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.pauseIcon {
+  height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .pauseIcon {
+    height: 20px;
+  }
+}
+.pause {
+  font-size: 25px;
+}
+@media screen and (max-width: 768px) {
+  .pause {
+    font-size: 18px;
+  }
+}
+.para {
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .para {
+    font-size: 15px;
+  }
+}
+.timeSetter {
+  display: flex;
+  gap: 15px;
+}
+.addBtn {
+  font-size: 25px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.minutes {
+  font-size: 25px;
+  background-image: linear-gradient(to right, #00d9f5, #defafe);
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .minutes {
+    font-size: 18px;
+    background-image: linear-gradient(to right, #00d9f5, #defafe);
+    padding: 8px 15px 8px 15px;
+    border-radius: 10px;
+  }
+}
